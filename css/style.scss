@@ -1,0 +1,131 @@
+$clr-blue: #3eb0f7;
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-family: Roboto, 'Arial Narrow', sans-serif;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.bg {
+    background-color: black;
+    padding: 100px 0;
+}
+.border-bottom {
+    border-bottom: 1px solid lightgray;
+}
+
+// ====== header ======
+
+.header {
+    color: white;
+
+    &__logo {
+        display: block;
+        height: 38px;
+        background: url(../images/icons/logo.png) left top / contain no-repeat;
+    }
+    &__flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__title {
+        font-size: 50px;
+        margin: 15px 0;
+    }
+    &__item {
+        box-sizing: border-box;
+    }
+    .left {
+        min-width: 60%;
+        flex-grow: 1;
+        flex-basis: 500px;
+        padding-right: 40px;
+    }
+    .right {
+        flex-basis: 300px;
+        min-width: 40%;
+        flex-grow: 1;
+    }
+    &__text {
+        margin: 30px 0;
+        line-height: 26px;
+    }
+    &__btn {
+        display: inline-block;
+        border: 4px solid $clr-blue;
+        border-radius: 40px;
+        padding: 20px 30px;
+        font-size: 18px;
+        margin-right: 10px;
+        margin-bottom: 4vw;
+        color: $clr-blue;
+        background-color: transparent;
+        text-decoration: none;
+        &:hover {
+            transition: 1s;
+            background-color: $clr-blue;
+            color: white;
+        }
+    }
+}
+
+.contact-form {
+    padding: 15px;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 4px;
+    &__title {
+        margin: 20px 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__input {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 18px;
+        margin-bottom: 15px;
+    }
+    &__btn {
+        background-color: $clr-blue;
+        color: white;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    &__text {
+        text-align: center;
+        font-size: 12px;
+        line-height: 30px;
+    }
+}
+// ====== nav-menu ======
+.menu {
+    padding: 7px 0;
+    display: flex;
+    &__logo {
+        display: block;
+        width: 45%;
+        height: 38px;
+        background: url(../images/icons/logo2.png) left top / contain no-repeat;
+    }
+    &__list {
+        display: flex;
+        align-items: center; 
+    }
+    &__link {
+        font-size: 14px;
+        text-decoration: none;
+        color: #777;
+        margin-right: 30px;
+    }
+}
+
+// ====== media ======
+
+@media (max-width: 800px) { // отображение кнопки и контекстного меню из неё
+}
